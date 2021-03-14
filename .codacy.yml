@@ -1,0 +1,18 @@
+engines:
+  phpcs:
+    enabled: true
+    php_version: 8.0
+exclude_paths:
+  -
+  - 'CHANGELOG.md'
+  - 'CONTRIBUTING.md'
+  - 'README.md'
+  - 'symfony.lock'
+  - 'src/Kernel.php'
+  - '.github/*'
+  - 'bin/*'
+  - 'config/*'
+  - 'public/*'
+  - 'migrations/*'
+  - 'tests/*'
+  - 'var/*'
