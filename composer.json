@@ -1,12 +1,27 @@
+
 {
     "type": "project",
-    "license": "proprietary",
+    "license": "GPL-3.0-or-later",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "name": "Tezz",
+    "description": "",
+
+    "authors": [
+        {
+            "name": "Kunwara",
+            "email": "Kunwara@protonmail.com",
+            "homepage": "https://github.com/Kunwara/Tezz",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=8",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-json": "*",
+        "ext-apcu": "*",
+        "ext-gd": "*",
         "composer/package-versions-deprecated": "1.11.99.1",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.2",
@@ -40,7 +55,8 @@
         "symfony/web-link": "5.2.*",
         "symfony/yaml": "5.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "predis/predis": ">=v1.1.6"
     },
     "require-dev": {
         "symfony/browser-kit": "^5.2",
