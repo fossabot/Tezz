@@ -1,11 +1,10 @@
-
 {
     "type": "project",
     "license": "GPL-3.0-or-later",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "name": "Tezz",
-    "description": "",
+    "name": "kunwara/tezz",
+    "description": "Tezz",
 
     "authors": [
         {
@@ -17,18 +16,20 @@
     ],
     "require": {
         "php": ">=8",
+        "ext-apcu": "*",
         "ext-ctype": "*",
+        "ext-gd": "*",
         "ext-iconv": "*",
         "ext-json": "*",
-        "ext-apcu": "*",
-        "ext-gd": "*",
         "composer/package-versions-deprecated": "1.11.99.1",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.2",
         "doctrine/doctrine-migrations-bundle": "^3.0",
         "doctrine/orm": "^2.8",
         "phpdocumentor/reflection-docblock": "^5.2",
+        "predis/predis": ">=v1.1.6",
         "sensio/framework-extra-bundle": "^6.1",
+        "squizlabs/php_codesniffer": "^3.5",
         "symfony/asset": "5.2.*",
         "symfony/console": "5.2.*",
         "symfony/dotenv": "5.2.*",
@@ -55,10 +56,10 @@
         "symfony/web-link": "5.2.*",
         "symfony/yaml": "5.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0",
-        "predis/predis": ">=v1.1.6"
+        "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-master",
         "symfony/browser-kit": "^5.2",
         "symfony/css-selector": "^5.2",
         "symfony/debug-bundle": "^5.2",
