@@ -13,5 +13,6 @@ install:
 before_script:
   - pecl install apcu
   - pecl install gd
+  - echo "extension = apuc.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 script:
   - ./vendor/bin/simple-phpunit --coverage-text --colors
