@@ -12,8 +12,8 @@ install:
  # - php bin/console doctrine:fixtures:load -n --env=test
 
 before_script:
-  - pecl install apcu
-  - pecl install gd
+  - yes | pecl install apcu
+  - yes | pecl install gd
   - echo "extension = apuc.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 script:
   - ./vendor/bin/simple-phpunit --coverage-text --colors
