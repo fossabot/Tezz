@@ -15,8 +15,7 @@
         }
     ],
     "require": {
-        "php": ">=8",
-        "ext-apcu": "*",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
